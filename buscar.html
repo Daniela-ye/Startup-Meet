@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Meet - Buscar Conexiones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="platform-container">
+        <nav class="horizontal-menu">
+            <div class="menu-logo">
+                <h2>Startup Meet</h2>
+            </div>
+            <ul class="menu-items">
+                <li><a href="dashboard.html">Inicio</a></li>
+                <li><a href="buscar.html" class="active">Buscar inversor/mentor</a></li>
+                <li><a href="ideas.html">Ideas</a></li>
+                <li><a href="presentaciones.html">Presentaciones</a></li>
+                <li><a href="prestamos.html">Préstamos y políticas</a></li>
+            </ul>
+            <div class="menu-user">
+                <span>Mi Perfil</span>
+                <a href="index.html" class="logout-btn">Cerrar Sesión</a>
+            </div>
+        </nav>
+
+        <main class="search-main">
+            <div class="search-header">
+                <h1>Encuentra tu Próximo Socio Estratégico</h1>
+                <p>Conecta con inversores, mentores y emprendedores que pueden impulsar tu startup</p>
+            </div>
+
+            <form class="connection-search-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="profileType">Tipo de Perfil</label>
+                        <select id="profileType" name="profileType">
+                            <option value="">Selecciona un tipo</option>
+                            <option value="investor">Inversor</option>
+                            <option value="mentor">Mentor</option>
+                            <option value="entrepreneur">Emprendedor</option>
+                            <option value="startup">Startup</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">Ubicación</label>
+                        <input type="text" id="location" name="location" placeholder="Ciudad o región">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="experience">Experiencia</label>
+                        <select id="experience" name="experience">
+                            <option value="">Nivel de experiencia</option>
+                            <option value="0-2">0-2 años</option>
+                            <option value="3-5">3-5 años</option>
+                            <option value="6-10">6-10 años</option>
+                            <option value="10+">Más de 10 años</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sector">Sector de Interés</label>
+                        <select id="sector" name="sector">
+                            <option value="">Elige un sector</option>
+                            <option value="tech">Tecnología</option>
+                            <option value="fintech">Fintech</option>
+                            <option value="healthtech">HealthTech</option>
+                            <option value="greentech">GreenTech</option>
+                            <option value="edtech">EdTech</option>
+                            <option value="other">Otros</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="search-btn">Encontrar Conexiones</button>
+                </div>
+            </form>
+
+            <section class="search-results">
+                <h2>Resultados de Búsqueda</h2>
+                <div class="results-grid">
+                    <!-- Placeholder for dynamic search results -->
+                    <div class="result-card">
+                        <div class="result-header">
+                            <h3>María González</h3>
+                            <span class="badge investor">Inversor</span>
+                        </div>
+                        <p>Especialista en inversiones de startups tecnológicas</p>
+                        <div class="result-footer">
+                            <span>Tecnología | 10+ años de experiencia</span>
+                            <button class="connect-btn">Conectar</button>
+                        </div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-header">
+                            <h3>Carlos Ramírez</h3>
+                            <span class="badge mentor">Mentor</span>
+                        </div>
+                        <p>Fundador exitoso, mentor de emprendedores en FinTech</p>
+                        <div class="result-footer">
+                            <span>FinTech | 15 años de experiencia</span>
+                            <button class="connect-btn">Conectar</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

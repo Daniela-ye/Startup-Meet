@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Meet - Presentaciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="platform-container">
+        <nav class="horizontal-menu">
+            <div class="menu-logo">
+                <h2>Startup Meet</h2>
+            </div>
+            <ul class="menu-items">
+                <li><a href="dashboard.html">Inicio</a></li>
+                <li><a href="buscar.html">Buscar inversor/mentor</a></li>
+                <li><a href="ideas.html">Ideas</a></li>
+                <li><a href="presentaciones.html" class="active">Presentaciones</a></li>
+                <li><a href="prestamos.html">Préstamos y políticas</a></li>
+            </ul>
+            <div class="menu-user">
+                <span>Mi Perfil</span>
+                <a href="index.html" class="logout-btn">Cerrar Sesión</a>
+            </div>
+        </nav>
+
+        <div class="presentaciones-container">
+            <div class="presentaciones-header">
+                <h1>Crea y Comparte tus Presentaciones de Startup</h1>
+                <p>Diseña presentaciones profesionales para captar la atención de inversores</p>
+            </div>
+
+            <div class="presentacion-tools">
+                <div class="templates-section">
+                    <h2>Plantillas de Presentación</h2>
+                    <div class="templates-grid">
+                        <div class="template-card">
+                            <h3>Startup Moderna</h3>
+                            <p>Diseño profesional y minimalista</p>
+                            <button class="select-template-btn">Seleccionar</button>
+                        </div>
+                        <div class="template-card">
+                            <h3>Presentación Tecnológica</h3>
+                            <p>Ideal para startups de tecnología</p>
+                            <button class="select-template-btn">Seleccionar</button>
+                        </div>
+                        <div class="template-card">
+                            <h3>Presentación FinTech</h3>
+                            <p>Diseñado para soluciones financieras</p>
+                            <button class="select-template-btn">Seleccionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="presentacion-editor">
+                    <h2>Editor de Presentaciones</h2>
+                    <form id="presentacionForm">
+                        <div class="form-group">
+                            <label for="presentacionTitulo">Título de la Presentación</label>
+                            <input type="text" id="presentacionTitulo" required placeholder="Nombre de tu startup o proyecto">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="presentacionDescripcion">Descripción Ejecutiva</label>
+                            <textarea id="presentacionDescripcion" required placeholder="Resumen ejecutivo de tu propuesta de negocio"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="presentacionArchivo">Subir Presentación</label>
+                            <input type="file" id="presentacionArchivo" accept=".ppt,.pptx,.pdf">
+                        </div>
+
+                        <div class="colaboracion-section">
+                            <h3>Colaboración</h3>
+                            <div class="form-group">
+                                <label for="colaboradores">Invitar Colaboradores</label>
+                                <input type="email" id="colaboradores" placeholder="Correo electrónico de colaboradores">
+                                <button type="button" class="add-colaborador-btn">Añadir</button>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="guardar-presentacion-btn">Guardar y Compartir</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="presentaciones-recientes">
+                <h2>Mis Presentaciones</h2>
+                <div class="presentaciones-grid">
+                    <div class="presentacion-card">
+                        <div class="presentacion-header">
+                            <h3>Plataforma de Innovación Educativa</h3>
+                        </div>
+                        <p>Presentación para inversores potenciales</p>
+                        <div class="presentacion-actions">
+                            <button class="ver-presentacion-btn">Ver</button>
+                            <button class="editar-presentacion-btn">Editar</button>
+                        </div>
+                    </div>
+                    <div class="presentacion-card">
+                        <div class="presentacion-header">
+                            <h3>Solución de Movilidad Urbana</h3>
+                        </div>
+                        <p>Propuesta de transporte sostenible</p>
+                        <div class="presentacion-actions">
+                            <button class="ver-presentacion-btn">Ver</button>
+                            <button class="editar-presentacion-btn">Editar</button>
+                        </div>
+                    </div>
+                    <div class="presentacion-card">
+                        <div class="presentacion-header">
+                            <h3>Plataforma de Salud Digital</h3>
+                        </div>
+                        <p>Innovación en telemedicina</p>
+                        <div class="presentacion-actions">
+                            <button class="ver-presentacion-btn">Ver</button>
+                            <button class="editar-presentacion-btn">Editar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

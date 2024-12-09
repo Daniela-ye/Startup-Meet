@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Meet - Ideas de Negocio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="platform-container">
+        <nav class="horizontal-menu">
+            <div class="menu-logo">
+                <h2>Startup Meet</h2>
+            </div>
+            <ul class="menu-items">
+                <li><a href="dashboard.html">Inicio</a></li>
+                <li><a href="buscar.html">Buscar inversor/mentor</a></li>
+                <li><a href="ideas.html" class="active">Ideas</a></li>
+                <li><a href="presentaciones.html">Presentaciones</a></li>
+                <li><a href="prestamos.html">Préstamos y políticas</a></li>
+            </ul>
+            <div class="menu-user">
+                <span>Mi Perfil</span>
+                <a href="index.html" class="logout-btn">Cerrar Sesión</a>
+            </div>
+        </nav>
+
+        <div class="ideas-container">
+            <div class="ideas-header">
+                <h1>Comparte y Desarrolla tus Ideas de Negocio</h1>
+                <p>Obtén retroalimentación de emprendedores y mentores expertos</p>
+            </div>
+
+            <div class="idea-submission-section">
+                <form id="ideaForm" class="idea-form">
+                    <div class="form-group">
+                        <label for="ideaTitle">Título de la Idea</label>
+                        <input type="text" id="ideaTitle" required placeholder="Un título conciso y atractivo">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ideaDescription">Descripción Detallada</label>
+                        <textarea id="ideaDescription" required placeholder="Describe tu idea de negocio, problema que resuelve y propuesta de valor"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ideaSector">Sector</label>
+                        <select id="ideaSector" required>
+                            <option value="">Selecciona un sector</option>
+                            <option value="tech">Tecnología</option>
+                            <option value="fintech">FinTech</option>
+                            <option value="healthtech">HealthTech</option>
+                            <option value="greentech">GreenTech</option>
+                            <option value="edtech">EdTech</option>
+                            <option value="other">Otros</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ideaFile">Archivos Adjuntos (Opcional)</label>
+                        <input type="file" id="ideaFile" accept=".pdf,.doc,.docx,.ppt,.pptx">
+                    </div>
+
+                    <button type="submit" class="submit-idea-btn">Publicar Idea</button>
+                </form>
+            </div>
+
+            <div class="ideas-feed">
+                <h2>Ideas Recientes</h2>
+                <div class="idea-card">
+                    <div class="idea-card-header">
+                        <h3>Plataforma de Aprendizaje Personalizado</h3>
+                        <span class="sector-badge edtech">EdTech</span>
+                    </div>
+                    <p>Una plataforma de aprendizaje en línea que utiliza inteligencia artificial para crear rutas de aprendizaje personalizadas.</p>
+                    <div class="idea-interactions">
+                        <button class="comment-btn">Comentar</button>
+                        <span class="comments-count">3 comentarios</span>
+                    </div>
+                </div>
+                <div class="idea-card">
+                    <div class="idea-card-header">
+                        <h3>Solución de Reciclaje Inteligente</h3>
+                        <span class="sector-badge greentech">GreenTech</span>
+                    </div>
+                    <p>Sistema de reciclaje con reconocimiento de materiales y recompensas para ciudadanos comprometidos.</p>
+                    <div class="idea-interactions">
+                        <button class="comment-btn">Comentar</button>
+                        <span class="comments-count">5 comentarios</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
